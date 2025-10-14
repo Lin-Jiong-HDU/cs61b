@@ -96,10 +96,12 @@ public class LinkedListDeque61BTest {
     @Test
     public void getTestBasic() {
          Deque61B<Integer> lld1 = new LinkedListDeque61B<>();
-//         lld1.addLast(0);
-//         lld1.addLast(1);
-//         lld1.addLast(-1);
-         assertThat(lld1.get(0)).isEqualTo(null);
+         lld1.addLast(0);
+         lld1.addLast(1);
+         lld1.addLast(-1);
+         lld1.addLast(2);
+
+         assertThat(lld1.get(3)).isEqualTo(2);
     }
 
     @Test

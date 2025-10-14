@@ -96,10 +96,33 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
         return null;
     }
 
+
+    public T getOld(int index) {
+        if (index < 0 || index >= size) {
+            return null;
+        }
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        T returnValue = current.value;
+        current = head;
+        return returnValue;
+    }
+
+    // Optimized
     @Override
     public T get(int index) {
         if (index < 0 || index >= size) {
             return null;
+        }
+        if (index >= size/2) {
+            current = tail;
+            for (int i = index + 1; i < size; i++) {
+                current = current.prev;
+            }
+            T returnValue = current.value;
+            current = head;
+            return returnValue;
         }
         for (int i = 0; i < index; i++) {
             current = current.next;
