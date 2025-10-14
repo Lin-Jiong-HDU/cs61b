@@ -67,7 +67,7 @@ public class LinkedListDeque61BTest {
 //         lld1.addFirst(-1);
          lld1.removeFirst();
 
-         assertThat(lld1.toList()).containsExactly(null).inOrder();
+         assertThat(lld1.toList()).containsExactly().inOrder();
     }
 
     @Test

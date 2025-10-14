@@ -9,57 +9,56 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
         T value;
     }
 
+
     private int size;
-    Node head;
-    Node tail;
-    Node current;
+    private Node head;
+    private Node tail;
 
     public LinkedListDeque61B() {
+        head = null;
+        tail = null;
         size = 0;
-        head = new Node();
-        tail = head;
-        current = head;
-        return;
     }
-
 
     @Override
     public void addFirst(T x) {
-        if (size == 0) {
-            head.value = x;
-            size++;
+        Node newNode = new Node();
+        newNode.value = x;
+
+        if (isEmpty()) {
+            head = newNode;
+            tail = newNode;
         } else {
-            size++;
-            Node temp = new Node();
-            temp.value = x;
-            temp.next = head;
-            head.prev = temp;
-            head = temp;
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
         }
+        size++;
     }
 
     @Override
     public void addLast(T x) {
-        if (size == 0) {
-            head.value = x;
-            size++;
+        Node newNode = new Node();
+        newNode.value = x;
+
+        if (isEmpty()) {
+            head = newNode;
+            tail = newNode;
         } else {
-            Node temp = new Node();
-            temp.value = x;
-            temp.prev = tail;
-            tail.next = temp;
-            tail = temp;
-            size++;
+            newNode.prev = tail;
+            tail.next = newNode;
+            tail = newNode;
         }
+        size++;
     }
 
     @Override
     public List<T> toList() {
         List<T> returnList = new ArrayList<>();
-        Node temp = head;
-        while (temp != null) {
-            returnList.add(temp.value);
-            temp = temp.next;
+        Node current = head;
+        while (current != null) {
+            returnList.add(current.value);
+            current = current.next;
         }
         return returnList;
     }
@@ -76,60 +75,62 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
 
     @Override
     public T removeFirst() {
-        if (size == 0) {
+        if (isEmpty()) {
             return null;
         }
-        head.next.prev = null;
+
+        T value = head.value;
         head = head.next;
+
+        if (head != null) {
+            head.prev = null;
+        } else {
+            tail = null;
+        }
+
         size--;
-        return null;
+        return value;
     }
 
     @Override
     public T removeLast() {
-        if (size == 0) {
+        if (isEmpty()) {
             return null;
         }
-        tail.prev.next = null;
+
+        T value = tail.value;
         tail = tail.prev;
+
+        if (tail != null) {
+            tail.next = null;
+        } else {
+            head = null;
+        }
+
         size--;
-        return null;
+        return value;
     }
 
-
-    public T getOld(int index) {
-        if (index < 0 || index >= size) {
-            return null;
-        }
-        for (int i = 0; i < index; i++) {
-            current = current.next;
-        }
-        T returnValue = current.value;
-        current = head;
-        return returnValue;
-    }
-
-    // Optimized
     @Override
     public T get(int index) {
         if (index < 0 || index >= size) {
             return null;
         }
-        if (index >= size/2) {
+
+        Node current;
+        if (index >= size / 2) {
             current = tail;
-            for (int i = index + 1; i < size; i++) {
+            for (int i = size - 1; i > index; i--) {
                 current = current.prev;
             }
-            T returnValue = current.value;
+        } else {
             current = head;
-            return returnValue;
+            for (int i = 0; i < index; i++) {
+                current = current.next;
+            }
         }
-        for (int i = 0; i < index; i++) {
-            current = current.next;
-        }
-        T returnValue = current.value;
-        current = head;
-        return returnValue;
+
+        return current.value;
     }
 
     @Override
@@ -137,13 +138,13 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
         if (index < 0 || index >= size) {
             return null;
         }
-        if (index == 0 || index >= size) {
-            T value = current.value;
-            current = head;
-            return value;
+        return getRecursiveHelper(head, index);
+    }
+
+    private T getRecursiveHelper(Node node, int index) {
+        if (index == 0) {
+            return node.value;
         }
-        current = current.next;
-        index--;
-        return getRecursive(index);
+        return getRecursiveHelper(node.next, index - 1);
     }
 }
