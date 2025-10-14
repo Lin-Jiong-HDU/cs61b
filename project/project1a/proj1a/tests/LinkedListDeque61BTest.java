@@ -57,4 +57,65 @@ public class LinkedListDeque61BTest {
      }
 
     // Below, you'll write your own tests for LinkedListDeque61B.
+
+    @Test
+    public void removeFirstTestBasic() {
+         Deque61B<Integer> lld1 = new LinkedListDeque61B<>();
+
+//         lld1.addFirst(0);
+//         lld1.addFirst(1);
+//         lld1.addFirst(-1);
+         lld1.removeFirst();
+
+         assertThat(lld1.toList()).containsExactly(null).inOrder();
+    }
+
+    @Test
+    public void removeLastTestBasic() {
+         Deque61B<Integer> lld1 = new LinkedListDeque61B<>();
+
+         lld1.addLast(0);
+         lld1.addLast(1);
+         lld1.addLast(-1);
+         lld1.removeLast();
+
+         assertThat(lld1.toList()).containsExactly(0, 1).inOrder();
+    }
+
+    @Test
+    public void removeFirstAndRemoveLastTest() {
+         Deque61B<Integer> lld1 = new LinkedListDeque61B<>();
+         lld1.addLast(0);
+         lld1.addLast(1);
+         lld1.addLast(-1);
+         lld1.removeLast();
+         lld1.removeFirst();
+         assertThat(lld1.toList()).containsExactly(1).inOrder();
+    }
+
+    @Test
+    public void getTestBasic() {
+         Deque61B<Integer> lld1 = new LinkedListDeque61B<>();
+//         lld1.addLast(0);
+//         lld1.addLast(1);
+//         lld1.addLast(-1);
+         assertThat(lld1.get(0)).isEqualTo(null);
+    }
+
+    @Test
+    public void isEmptyTest() {
+         Deque61B<Integer> lld1 = new LinkedListDeque61B<>();
+         assertThat(lld1.isEmpty()).isTrue();
+    }
+
+    @Test
+    public void getRecursiveTestBasic() {
+         Deque61B<Integer> lld1 = new LinkedListDeque61B<>();
+         lld1.addLast(0);
+         lld1.addLast(1);
+         lld1.addLast(-1);
+         lld1.addLast(2);
+         lld1.addLast(-2);
+         assertThat(lld1.getRecursive(3)).isEqualTo(2);
+    }
 }
