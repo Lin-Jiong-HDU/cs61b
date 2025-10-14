@@ -3,20 +3,21 @@ import java.util.List;
 
 public class LinkedListDeque61B<T> implements Deque61B<T> {
 
+    // 节点类改为private（之前的修改保持）
     private class Node {
         Node next;
         Node prev;
         T value;
     }
 
-
     private int size;
-    private Node head;
-    private Node tail;
+    private final Node sentinel;  // 哨兵节点（替代原来的head和tail）
 
+    // 构造函数：初始化哨兵节点（自身成环）
     public LinkedListDeque61B() {
-        head = null;
-        tail = null;
+        sentinel = new Node();
+        sentinel.next = sentinel;  // 哨兵的next指向自己
+        sentinel.prev = sentinel;  // 哨兵的prev指向自己
         size = 0;
     }
 
@@ -25,14 +26,12 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
         Node newNode = new Node();
         newNode.value = x;
 
-        if (isEmpty()) {
-            head = newNode;
-            tail = newNode;
-        } else {
-            newNode.next = head;
-            head.prev = newNode;
-            head = newNode;
-        }
+        // 新节点插入到哨兵和哨兵的next之间
+        newNode.next = sentinel.next;
+        newNode.prev = sentinel;
+        sentinel.next.prev = newNode;
+        sentinel.next = newNode;
+
         size++;
     }
 
@@ -41,22 +40,20 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
         Node newNode = new Node();
         newNode.value = x;
 
-        if (isEmpty()) {
-            head = newNode;
-            tail = newNode;
-        } else {
-            newNode.prev = tail;
-            tail.next = newNode;
-            tail = newNode;
-        }
+        // 新节点插入到哨兵的prev和哨兵之间
+        newNode.prev = sentinel.prev;
+        newNode.next = sentinel;
+        sentinel.prev.next = newNode;
+        sentinel.prev = newNode;
+
         size++;
     }
 
     @Override
     public List<T> toList() {
         List<T> returnList = new ArrayList<>();
-        Node current = head;
-        while (current != null) {
+        Node current = sentinel.next;  // 从哨兵的next开始遍历（跳过哨兵）
+        while (current != sentinel) {  // 遍历到哨兵为止
             returnList.add(current.value);
             current = current.next;
         }
@@ -79,14 +76,12 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
             return null;
         }
 
-        T value = head.value;
-        head = head.next;
+        Node first = sentinel.next;
+        T value = first.value;
 
-        if (head != null) {
-            head.prev = null;
-        } else {
-            tail = null;
-        }
+        // 移除第一个节点（哨兵的next）
+        sentinel.next = first.next;
+        first.next.prev = sentinel;
 
         size--;
         return value;
@@ -98,14 +93,12 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
             return null;
         }
 
-        T value = tail.value;
-        tail = tail.prev;
+        Node last = sentinel.prev;
+        T value = last.value;
 
-        if (tail != null) {
-            tail.next = null;
-        } else {
-            head = null;
-        }
+        // 移除最后一个节点（哨兵的prev）
+        sentinel.prev = last.prev;
+        last.prev.next = sentinel;
 
         size--;
         return value;
@@ -117,19 +110,10 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
             return null;
         }
 
-        Node current;
-        if (index >= size / 2) {
-            current = tail;
-            for (int i = size - 1; i > index; i--) {
-                current = current.prev;
-            }
-        } else {
-            current = head;
-            for (int i = 0; i < index; i++) {
-                current = current.next;
-            }
+        Node current = sentinel.next;  // 从第一个实际节点开始
+        for (int i = 0; i < index; i++) {
+            current = current.next;
         }
-
         return current.value;
     }
 
@@ -138,7 +122,7 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
         if (index < 0 || index >= size) {
             return null;
         }
-        return getRecursiveHelper(head, index);
+        return getRecursiveHelper(sentinel.next, index);  // 从第一个实际节点开始递归
     }
 
     private T getRecursiveHelper(Node node, int index) {
