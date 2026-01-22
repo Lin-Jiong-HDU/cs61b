@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f535ac04e609a8c4",
+        "id": "e513cada51d41229",
         "type": "tabs",
         "children": [
           {
-            "id": "2de05e9f75e18ed4",
+            "id": "cc939e7358cb8175",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "docs/images/截屏2026-01-21 21.21.17.png"
+                "file": "docs/lecture24.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "截屏2026-01-21 21.21.17"
+              "icon": "lucide-file",
+              "title": "lecture24"
             }
           }
         ]
@@ -70,6 +72,162 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "书签"
+            }
+          },
+          {
+            "id": "222dc4f655427340",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.47.40.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.47.40"
+            }
+          },
+          {
+            "id": "fbb39ed7d4e29d97",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 17.46.38.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 17.46.38"
+            }
+          },
+          {
+            "id": "edb3925a5679772f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 17.52.11.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 17.52.11"
+            }
+          },
+          {
+            "id": "9d7342439d192e24",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 17.53.58.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 17.53.58"
+            }
+          },
+          {
+            "id": "47031ab47a464010",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 17.58.17.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 17.58.17"
+            }
+          },
+          {
+            "id": "b9150ca2163ab397",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.03.52.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.03.52"
+            }
+          },
+          {
+            "id": "b8a1741a9adae130",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.05.55.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.05.55"
+            }
+          },
+          {
+            "id": "ad7b180b4622e62a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.19.24.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.19.24"
+            }
+          },
+          {
+            "id": "f89b70b886d957ba",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.21.44.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.21.44"
+            }
+          },
+          {
+            "id": "296bd9c052f17d8a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.28.38.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.28.38"
+            }
+          },
+          {
+            "id": "1bfe32bf5fe133a3",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.40.53.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.40.53"
+            }
+          },
+          {
+            "id": "1ffb121576cc2bec",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.41.30.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.41.30"
+            }
+          },
+          {
+            "id": "e95b4c4930ec464c",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-22 18.42.51.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-22 18.42.51"
             }
           }
         ]
@@ -162,20 +320,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7bd821cb1896a0d3",
+  "active": "cc939e7358cb8175",
   "lastOpenFiles": [
+    "docs/images/截屏2026-01-22 17.46.38.png",
+    "未命名.base",
+    "docs/images/截屏2026-01-22 18.42.51.png",
+    "docs/lecture24.md",
+    "docs/images/截屏2026-01-22 18.47.40.png",
+    "docs/images/截屏2026-01-22 18.41.30.png",
+    "docs/images/截屏2026-01-22 18.40.53.png",
+    "docs/images/截屏2026-01-22 18.28.38.png",
+    "docs/images/截屏2026-01-22 18.21.44.png",
+    "docs/images/截屏2026-01-22 18.19.24.png",
+    "docs/images/截屏2026-01-22 18.05.55.png",
+    "docs/images/截屏2026-01-22 18.03.52.png",
     "docs/lecture23.md",
-    "docs/images/截屏2026-01-21 22.02.19.png",
-    "docs/images/截屏2026-01-21 22.01.33.png",
-    "docs/images/截屏2026-01-21 21.57.59.png",
-    "docs/images/截屏2026-01-21 21.49.55.png",
-    "docs/images/截屏2026-01-21 21.42.23.png",
-    "docs/images/截屏2026-01-21 21.38.09.png",
-    "docs/images/截屏2026-01-21 21.32.43.png",
-    "docs/images/截屏2026-01-21 21.24.20.png",
     "docs/lecture22.md",
-    "docs/images/截屏2026-01-21 21.21.17.png",
-    "docs/images/截屏2025-12-19 12.36.58.png",
     "docs/lecture21.md",
     "docs/lecture20.md",
     "docs/lecture19.md",
