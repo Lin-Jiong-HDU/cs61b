@@ -11,14 +11,12 @@
             "id": "cc939e7358cb8175",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "docs/lecture24.md",
-                "mode": "source",
-                "source": false
+                "file": "docs/images/截屏2026-01-23 14.54.38.png"
               },
-              "icon": "lucide-file",
-              "title": "lecture24"
+              "icon": "lucide-image",
+              "title": "截屏2026-01-23 14.54.38"
             }
           }
         ]
@@ -320,20 +318,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc939e7358cb8175",
+  "active": "7bd821cb1896a0d3",
   "lastOpenFiles": [
+    "docs/lecture25.md",
+    "docs/images/截屏2026-01-23 15.21.55.png",
+    "docs/images/截屏2026-01-23 15.16.40.png",
+    "docs/images/截屏2026-01-23 15.15.49.png",
+    "docs/images/截屏2026-01-23 15.10.09.png",
+    "docs/lecture24.md",
+    "docs/images/截屏2026-01-23 15.07.05.png",
+    "docs/images/截屏2026-01-23 15.04.47.png",
+    "docs/images/截屏2026-01-23 15.00.12.png",
+    "docs/images/截屏2026-01-23 14.54.38.png",
     "docs/images/截屏2026-01-22 17.46.38.png",
     "未命名.base",
     "docs/images/截屏2026-01-22 18.42.51.png",
-    "docs/lecture24.md",
-    "docs/images/截屏2026-01-22 18.47.40.png",
-    "docs/images/截屏2026-01-22 18.41.30.png",
-    "docs/images/截屏2026-01-22 18.40.53.png",
-    "docs/images/截屏2026-01-22 18.28.38.png",
-    "docs/images/截屏2026-01-22 18.21.44.png",
-    "docs/images/截屏2026-01-22 18.19.24.png",
-    "docs/images/截屏2026-01-22 18.05.55.png",
-    "docs/images/截屏2026-01-22 18.03.52.png",
     "docs/lecture23.md",
     "docs/lecture22.md",
     "docs/lecture21.md",
