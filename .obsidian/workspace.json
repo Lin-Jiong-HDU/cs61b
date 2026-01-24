@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "docs/images/截屏2026-01-23 14.54.38.png"
+                "file": "docs/images/截屏2026-01-24 12.36.39.png"
               },
               "icon": "lucide-image",
-              "title": "截屏2026-01-23 14.54.38"
+              "title": "截屏2026-01-24 12.36.39"
             }
           }
         ]
@@ -309,7 +309,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -320,19 +320,20 @@
   },
   "active": "7bd821cb1896a0d3",
   "lastOpenFiles": [
+    "docs/lecture26.md",
+    "docs/images/截屏2026-01-24 13.03.11.png",
+    "docs/images/截屏2026-01-24 13.01.13.png",
+    "docs/images/截屏2026-01-24 12.48.38.png",
+    "docs/images/截屏2026-01-24 12.38.19.png",
+    "docs/images/截屏2026-01-24 12.36.39.png",
     "docs/lecture25.md",
+    "docs/images/截屏2026-01-23 14.54.38.png",
     "docs/images/截屏2026-01-23 15.21.55.png",
     "docs/images/截屏2026-01-23 15.16.40.png",
     "docs/images/截屏2026-01-23 15.15.49.png",
     "docs/images/截屏2026-01-23 15.10.09.png",
     "docs/lecture24.md",
-    "docs/images/截屏2026-01-23 15.07.05.png",
-    "docs/images/截屏2026-01-23 15.04.47.png",
-    "docs/images/截屏2026-01-23 15.00.12.png",
-    "docs/images/截屏2026-01-23 14.54.38.png",
-    "docs/images/截屏2026-01-22 17.46.38.png",
     "未命名.base",
-    "docs/images/截屏2026-01-22 18.42.51.png",
     "docs/lecture23.md",
     "docs/lecture22.md",
     "docs/lecture21.md",
