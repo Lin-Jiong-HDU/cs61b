@@ -11,10 +11,12 @@
             "id": "5f649e989b2b3806",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "image",
+              "state": {
+                "file": "docs/images/截屏2026-01-27 20.14.46.png"
+              },
+              "icon": "lucide-image",
+              "title": "截屏2026-01-27 20.14.46"
             }
           }
         ]
@@ -318,19 +320,21 @@
   },
   "active": "7bd821cb1896a0d3",
   "lastOpenFiles": [
+    "docs/images/截屏2026-01-27 20.36.10.png",
+    "docs/lecture30.md",
+    "docs/images/截屏2026-01-27 20.34.27.png",
+    "docs/images/截屏2026-01-27 20.33.16.png",
+    "docs/images/截屏2026-01-27 20.30.46.png",
+    "docs/images/截屏2026-01-27 20.28.26.png",
+    "docs/images/截屏2026-01-27 20.18.58.png",
+    "docs/images/截屏2026-01-27 20.16.34.png",
+    "docs/images/截屏2026-01-27 20.15.17.png",
+    "docs/images/截屏2026-01-27 20.14.46.png",
+    "docs/lecture29.md",
     "docs/lecture28.md",
     "docs/images/截屏2026-01-26 19.44.11.png",
-    "docs/images/截屏2026-01-26 19.40.10.png",
-    "docs/images/截屏2026-01-26 19.37.16.png",
-    "docs/images/截屏2026-01-26 19.36.16.png",
-    "docs/images/截屏2026-01-26 19.33.13.png",
-    "docs/images/截屏2026-01-26 19.30.28.png",
     "docs/lecture27.md",
-    "docs/images/截屏2026-01-25 19.10.04.png",
-    "docs/images/截屏2026-01-25 19.23.45.png",
-    "docs/images/截屏2026-01-24 12.36.39.png",
     "docs/lecture26.md",
-    "docs/images/截屏2026-01-24 13.03.11.png",
     "docs/lecture25.md",
     "docs/lecture24.md",
     "未命名.base",
