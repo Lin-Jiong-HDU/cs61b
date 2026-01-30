@@ -11,14 +11,12 @@
             "id": "5f649e989b2b3806",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "docs/lecture34.md",
-                "mode": "source",
-                "source": false
+                "file": "docs/images/截屏2026-01-30 19.26.35.png"
               },
-              "icon": "lucide-file",
-              "title": "lecture34"
+              "icon": "lucide-image",
+              "title": "截屏2026-01-30 19.26.35"
             }
           }
         ]
@@ -320,19 +318,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5f649e989b2b3806",
+  "active": "7bd821cb1896a0d3",
   "lastOpenFiles": [
+    "docs/lecture35.md",
+    "docs/images/截屏2026-01-30 19.28.16.png",
+    "docs/images/截屏2026-01-30 19.26.35.png",
+    "docs/lecture34.md",
     "docs/images/截屏2026-01-29 20.35.28.png",
     "docs/images/截屏2026-01-29 20.35.55.png",
-    "docs/lecture34.md",
     "docs/images/截屏2026-01-29 21.29.17.png",
     "docs/images/截屏2026-01-29 21.23.34.png",
     "docs/images/截屏2026-01-29 21.22.26.png",
     "docs/images/截屏2026-01-29 21.19.52.png",
     "docs/images/截屏2026-01-29 21.18.37.png",
     "docs/images/截屏2026-01-29 20.55.21.png",
-    "docs/images/截屏2026-01-29 20.51.30.png",
-    "docs/images/截屏2026-01-29 20.48.26.png",
     "docs/lecture33.md",
     "docs/lecture30.md",
     "docs/lecture18.md",
@@ -358,7 +357,6 @@
     "docs/lecture8.md",
     "docs/lecture14.md",
     "docs/proj0_hardmod.md",
-    "docs/lecture13.md",
-    "docs/lecture10.md"
+    "docs/lecture13.md"
   ]
 }
