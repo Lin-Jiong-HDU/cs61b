@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "623769282f1f3301",
+        "id": "ab73f34a349c5c1e",
         "type": "tabs",
         "children": [
           {
-            "id": "5f649e989b2b3806",
+            "id": "088fb660065beba0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "docs/images/截屏2026-01-30 19.26.35.png"
+                "file": "docs/lecture36.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "截屏2026-01-30 19.26.35"
+              "icon": "lucide-file",
+              "title": "lecture36"
             }
           }
         ]
@@ -320,18 +322,20 @@
   },
   "active": "7bd821cb1896a0d3",
   "lastOpenFiles": [
+    "docs/images/截屏2026-01-31 18.22.49.png",
+    "docs/lecture36.md",
+    "docs/images/截屏2026-01-31 19.00.03.png",
+    "docs/images/截屏2026-01-31 18.56.26.png",
+    "docs/images/截屏2026-01-31 18.47.33.png",
+    "docs/images/截屏2026-01-31 18.41.34.png",
+    "docs/images/截屏2026-01-31 18.39.21.png",
+    "docs/images/截屏2026-01-31 18.36.28.png",
+    "docs/images/截屏2026-01-31 18.31.49.png",
+    "docs/images/截屏2026-01-31 18.29.52.png",
+    "docs/images/截屏2026-01-31 18.29.07.png",
+    "docs/images/截屏2026-01-31 18.23.41.png",
     "docs/lecture35.md",
-    "docs/images/截屏2026-01-30 19.28.16.png",
-    "docs/images/截屏2026-01-30 19.26.35.png",
     "docs/lecture34.md",
-    "docs/images/截屏2026-01-29 20.35.28.png",
-    "docs/images/截屏2026-01-29 20.35.55.png",
-    "docs/images/截屏2026-01-29 21.29.17.png",
-    "docs/images/截屏2026-01-29 21.23.34.png",
-    "docs/images/截屏2026-01-29 21.22.26.png",
-    "docs/images/截屏2026-01-29 21.19.52.png",
-    "docs/images/截屏2026-01-29 21.18.37.png",
-    "docs/images/截屏2026-01-29 20.55.21.png",
     "docs/lecture33.md",
     "docs/lecture30.md",
     "docs/lecture18.md",
@@ -356,7 +360,6 @@
     "docs/lecture9.md",
     "docs/lecture8.md",
     "docs/lecture14.md",
-    "docs/proj0_hardmod.md",
-    "docs/lecture13.md"
+    "docs/proj0_hardmod.md"
   ]
 }
